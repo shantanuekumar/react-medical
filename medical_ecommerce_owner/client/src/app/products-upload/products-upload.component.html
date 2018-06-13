@@ -1,0 +1,77 @@
+<div class="container">
+
+  <div class="row">
+    <div class="col-md-6">
+  <h2 class="lead" id="upload">Upload products</h2>
+  <form (submit)="upload()">
+    <div class="form-group">
+      <input type="text" class="form-control" name="product_category" placeholder="product category" [(ngModel)]="product.product_category">
+    </div>
+    <div class="form-group">
+      <input type="number" class="form-control" name="product_category_id" placeholder="product category id" [(ngModel)]="product.product_category_id">
+    </div>
+    <div class="form-group" >
+      <input type="text" class="form-control" name="product_subcategory" placeholder="product subcategory" [(ngModel)]="product.product_subcategory">
+    </div>
+    <div class="form-group" >
+      <input type="text" class="form-control" name="product_label" placeholder="product label" [(ngModel)]="product.product_label">
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" name="product_id" placeholder="product id" [(ngModel)]="product.product_id">
+    </div>
+    <div class="form-group">
+      <input type="number" class="form-control" name="product_price" step="0.01" placeholder="product price" [(ngModel)]="product.product_price">
+    </div>
+    <div class="form-group">
+      <input type="number" class="form-control" name="product_promotion" placeholder="product promotion" [(ngModel)]="product.product_promotion">
+    </div>
+    <div class="form-group">
+      <input type="number" class="form-control" name="product_availability" placeholder="product availability" [(ngModel)]="product.product_availability">
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" name="product_brand" placeholder="product brand" [(ngModel)]="product.product_brand">
+    </div>
+    <div class="form-group">
+      <label for="product_image">upload product image</label>
+      <input type="file" #fileupload  name="product_image" (change)="fileChange($event,fileupload.files)">
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" name="product_chemical_composition" placeholder="chemical composition" [(ngModel)]="product.product_chemical_composition">
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" name="product_unit" placeholder="unit" [(ngModel)]="product.product_unit">
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" name="product_distributor" placeholder="distributor" [(ngModel)]="product.product_distributor">
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" name="product_stock_id" placeholder="stock id" [(ngModel)]="product.product_stock_id">
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" name="product_stock_expiry_date" onfocus="(this.type='date')" placeholder="stock expiry date" [(ngModel)]="product.product_stock_expiry_date">
+    </div>
+    <div class="form-group">
+      <input type="number" class="form-control" name="product_quantity_per_stock" placeholder="quantity per stock" [(ngModel)]="product.product_quantity_per_stock">
+    </div>
+    <button type="submit" class="btn btn-default">upload</button>
+  </form>
+  </div>
+ </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
